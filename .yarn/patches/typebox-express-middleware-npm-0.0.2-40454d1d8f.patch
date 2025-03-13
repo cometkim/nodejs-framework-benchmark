@@ -1,0 +1,18 @@
+diff --git a/lib/index.js b/lib/index.js
+index f4f48123eed5ba66e53600262caf667f29b23585..f79093ce5135e0866c2050da8bacba421f43b766 100644
+--- a/lib/index.js
++++ b/lib/index.js
+@@ -16,11 +16,11 @@ var __extends = (this && this.__extends) || (function () {
+ })();
+ exports.__esModule = true;
+ exports.validateBody = exports.validateQuery = exports.validateParams = exports.validateRequest = exports.TypeboxError = void 0;
+-var compiler_1 = require("@sinclair/typebox/compiler/compiler");
++var compiler_1 = require("@sinclair/typebox/compiler");
+ var TypeboxError = /** @class */ (function (_super) {
+     __extends(TypeboxError, _super);
+     function TypeboxError(errors) {
+-        var _this = _super.call(this, 'Typebox error') || this;
++        var _this = _super.call(this, JSON.stringify(errors, null, 2)) || this;
+         _this.errors = errors;
+         _this.name = 'TypeboxError';
+         return _this;

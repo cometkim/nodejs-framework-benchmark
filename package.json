@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@bogeychan/elysia-logger": "^0.1.8",
+    "@elysiajs/cookie": "^0.8.0",
+    "@elysiajs/cors": "^1.2.0",
+    "@elysiajs/node": "^1.2.6",
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/cors": "^11.0.0",
+    "@fastify/type-provider-typebox": "^5.1.0",
+    "@hono/node-server": "^1.13.8",
+    "@hono/typebox-validator": "^0.3.2",
+    "@sinclair/typebox": "^0.34.30",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "elysia": "^1.2.25",
+    "express": "^4.21.2",
+    "fastify": "^5.2.1",
+    "hono": "^4.7.4",
+    "pino-http": "^10.4.0",
+    "typebox-express-middleware": "patch:typebox-express-middleware@npm%3A0.0.2#~/.yarn/patches/typebox-express-middleware-npm-0.0.2-40454d1d8f.patch"
+  },
+  "packageManager": "yarn@4.7.0"
+}
