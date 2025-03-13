@@ -25,9 +25,16 @@ Fastify reiles on its built-in [ajv](https://ajv.js.org/) compiler, while others
 
 ## Impressions
 
-I’m not sharing the specific benchmark stats here because I strongly recommend setting up your own benchmarking suite.
+Here's result with simple setup, but I strongly recommend setting up your own benchmark with more specific environment condition.
 
-However, here are a few key takeaways:
+<details>
+<summary>Analysis</summary>
+
+![image](https://github.com/user-attachments/assets/b9a57364-ceea-48b9-a0ef-53d7c02f3a8a)
+  
+</details>
+
+A few key takeaways:
 
 - With recent versions of Node.js, the differences between these frameworks are not as significant as one might expect. The biggest bottlenecks often come from user code and misconfigurations rather than the framework itself.
 - Additional adapters for Node.js are not as slow as I initially thought. In fact, Elysia performs quite well on Node.js.
