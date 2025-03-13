@@ -17,7 +17,7 @@ Middleware & plugin configuration:
 
 - Basic CORS headers
 - Validation for query, request and response body
-- Simulated IO job ([common/auth.js](src/common/auth.js))
+- Simulated I/O task ([common/auth.js](src/common/auth.js))
 
 The benchmarks use each framework’s official plugins, but for validation, all tests follow the same [TypeBox](https://github.com/sinclairzx81/typebox) schema ([common/schema.js](src/common/schema.js)).
 
@@ -40,7 +40,7 @@ A few key takeaways:
 - Additional adapters for Node.js are not as slow as I initially thought. In fact, Elysia performs quite well on Node.js.
 - As concurrency increases, Fastify still seems to have an edge in reliability.
 - I don't prefer Express anywhere. I prefer frameworks with better configuration options and a high-quality ecosystem, like Fastify.
-- If you opt for a "micro" framework, don’t blame the framework for performance —blame yours.
+- If you opt for a "micro" framework, don’t blame the framework for performance —blame your own configuration.
 
 ## LICENSE
 
