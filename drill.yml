@@ -1,0 +1,15 @@
+---
+concurrency: 200
+base: "http://localhost:3000"
+iterations: 50000
+rampup: 2
+
+plan:
+  - name: POST request with parameters
+    request:
+      url: /users/123456?foo=hello&bar=42&baz=world
+      method: POST
+      headers:
+        Content-Type: "application/json"
+        Cookie: "cookie=example"
+      body: '{"nested":{"a":"example"},"b":[true,false,null],"c":123}'
