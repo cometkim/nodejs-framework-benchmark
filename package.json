@@ -17,6 +17,7 @@
     "elysia": "^1.2.25",
     "express": "^4.21.2",
     "fastify": "^5.2.1",
+    "h3": "npm:h3-nightly@^2.0.0-20250312-144942-506a98f",
     "hono": "^4.7.4",
     "pino-http": "^10.4.0",
     "typebox-express-middleware": "patch:typebox-express-middleware@npm%3A0.0.2#~/.yarn/patches/typebox-express-middleware-npm-0.0.2-40454d1d8f.patch"

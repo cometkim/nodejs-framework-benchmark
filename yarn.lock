@@ -327,6 +327,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cookie-es@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "cookie-es@npm:2.0.0"
+  checksum: 10c0/3b2459030a5ad2bc715aeb27a32f274340670bfc5031ac29e1fba804212517411bb617880d3fe66ace2b64dfb28f3049e2d1ff40d4bec342154ccdd124deaeaa
+  languageName: node
+  linkType: hard
+
 "cookie-parser@npm:^1.4.7":
   version: 1.4.7
   resolution: "cookie-parser@npm:1.4.7"
@@ -748,6 +755,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"h3@npm:h3-nightly@^2.0.0-20250312-144942-506a98f":
+  version: 2.0.0-20250312-144942-506a98f
+  resolution: "h3-nightly@npm:2.0.0-20250312-144942-506a98f"
+  dependencies:
+    cookie-es: "npm:^2.0.0"
+    rou3: "npm:^0.5.1"
+    srvx: "npm:^0.2.5"
+    uncrypto: "npm:^0.1.3"
+  peerDependencies:
+    crossws: ^0.2.4
+  peerDependenciesMeta:
+    crossws:
+      optional: true
+  checksum: 10c0/298ad3c2cf220b8d19b1995a37e4156df9ed86d3b436cf0e4101a56b17a939555c4c171db30e2c81dd51592b7b71f886a61158358947b9f9399f6a5269a9dd8d
+  languageName: node
+  linkType: hard
+
 "has-symbols@npm:^1.1.0":
   version: 1.1.0
   resolution: "has-symbols@npm:1.1.0"
@@ -1160,11 +1184,19 @@ __metadata:
     elysia: "npm:^1.2.25"
     express: "npm:^4.21.2"
     fastify: "npm:^5.2.1"
+    h3: "npm:h3-nightly@^2.0.0-20250312-144942-506a98f"
     hono: "npm:^4.7.4"
     pino-http: "npm:^10.4.0"
     typebox-express-middleware: "patch:typebox-express-middleware@npm%3A0.0.2#~/.yarn/patches/typebox-express-middleware-npm-0.0.2-40454d1d8f.patch"
   languageName: unknown
   linkType: soft
+
+"rou3@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "rou3@npm:0.5.1"
+  checksum: 10c0/4ec56564829fe9b627aa5bbd7ded5d8f4a4c0c5baeda59941cdbd4c9b2336689b0005f28e1c1047bb527c44a5dba7e3b89ef0221b6aa35c790029b6508fb2761
+  languageName: node
+  linkType: hard
 
 "safe-buffer@npm:5.2.1":
   version: 5.2.1
@@ -1323,6 +1355,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"srvx@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "srvx@npm:0.2.5"
+  dependencies:
+    cookie-es: "npm:^2.0.0"
+  checksum: 10c0/ae8b0da06b4a35bce4bd948dd7aaf797ed9796075dc08286ae6cca221f90cc33b872c53eea8e48886ce940f904126ab1ab816ec56ecb6b2c4080dc4696239937
+  languageName: node
+  linkType: hard
+
 "statuses@npm:2.0.1":
   version: 2.0.1
   resolution: "statuses@npm:2.0.1"
@@ -1382,6 +1423,13 @@ __metadata:
     "@types/express": ^4.17.14
     express: ^4.18.1
   checksum: 10c0/1502d10db776613fa4e1626971f569113c498e3a786e4b55ee06a1be47dd5a0b933558c4e8238370f63862aac51a14f220f4e3c461c022d2e9af97d9c81beabd
+  languageName: node
+  linkType: hard
+
+"uncrypto@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "uncrypto@npm:0.1.3"
+  checksum: 10c0/74a29afefd76d5b77bedc983559ceb33f5bbc8dada84ff33755d1e3355da55a4e03a10e7ce717918c436b4dfafde1782e799ebaf2aadd775612b49f7b5b2998e
   languageName: node
   linkType: hard
 
