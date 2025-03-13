@@ -12,6 +12,7 @@ Frameworks:
 - [Fastify](https://fastify.dev/) v5
 - [Hono](https://hono.dev/) w/ Node.js adapter
 - [Elysia](https://elysiajs.com/) w/ Node.js adapter
+- [h3](https://h3.unjs.io/) w/ Node.js adapter
 
 Middleware & plugin configuration:
 
