@@ -40,9 +40,9 @@ However, I strongly recommend setting up your own benchmark with more specific e
 
 Runned on Node.js 23.9, Linux x86_64 Intel CPU machine
 
-w/ **default (less memory), 2k concurrent requests**
+w/ **default (less memory), 1k concurrent requests**
 
-![output](https://github.com/user-attachments/assets/80475fd9-3055-4f5f-9c13-078279bb897f)
+![image](https://github.com/user-attachments/assets/7e369bef-1fb6-40f2-8ce7-e27d079f0462)
 
 w/ **`--max-old-space-size=2048` & `--max-semi-space-size=256`, 2k concurrent requests**
 
