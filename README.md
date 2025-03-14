@@ -38,20 +38,27 @@ However, I strongly recommend setting up your own benchmark with more specific e
 <details>
 <summary>Analysis</summary>
 
-(Runned on Node.js 23.9, Linux x86_64 Intel CPU machine)
+Runned on Node.js 23.9, Linux x86_64 Intel CPU machine
+
+w/ **default (less memory), 2k concurrent requests**
 
 ![output](https://github.com/user-attachments/assets/80475fd9-3055-4f5f-9c13-078279bb897f)
+
+w/ **`--max-old-space-size=2048` & `--max-semi-space-size=256`, 2k concurrent requests**
+
+![image](https://github.com/user-attachments/assets/e5f262d9-59fd-4678-9e6f-a439a200c376)
 
 </details>
 
 A few key takeaways:
 
-- The differences between these frameworks are not as significant as one might expect. The biggest bottlenecks often come from user code and misconfigurations rather than the framework itself.
+- The result depends a lot on the resources the server has available. Choose your GC options carefully.
 - Additional adapters for Node.js are not as slow as I initially thought.
-- As concurrency increases, Fastify still seems to have an edge in reliability.
-- I don't prefer Express anywhere. I prefer frameworks with better configuration options and a high-quality ecosystem, like Fastify.
-- If you opt for a "micro" framework, don’t blame the framework for performance —blame your own configuration.
-- It is difficult to show fair competition with some opinionated frameworks. To evaluate it, make the benchmark as close as possible to the real product requirements.
+- Fastify still seems to have an edge in reliability. Especially good for many low-spec servers.
+- Hono, Elysia, and Effect have memory management issues. They produce a lot of temporary objects, so they are sensitive to scavenger GC.
+- If you have enough resources, even Express will work fine. Use whatever you like best.
+- I personally don't prefer Express anywhere. I prefer frameworks with better configuration options and a high-quality ecosystem, like Fastify. Because in the real world, most bottlenecks come from user code and misconfigurations.
+- It is difficult to show fair competition with some opinionated frameworks like Effect platform. To evaluate it, make the benchmark as close as possible to the real product requirements.
 
 ## LICENSE
 
