@@ -1,6 +1,14 @@
 {
   "private": true,
   "type": "module",
+  "scripts": {
+    "clinic:effect": "clinic doctor --name effect -- node --max-old-space-size=2048 --max-semi-space-size=256 src/effect.ts",
+    "clinic:elysia": "clinic doctor --name elysia -- node --max-old-space-size=2048 --max-semi-space-size=256 src/elysia.js",
+    "clinic:express": "clinic doctor --name express -- node --max-old-space-size=2048 --max-semi-space-size=256 src/express.js",
+    "clinic:fastify": "clinic doctor --name fastify -- node --max-old-space-size=2048 --max-semi-space-size=256 src/express.js",
+    "clinic:h3": "clinic doctor --name h3 -- node --max-old-space-size=2048 --max-semi-space-size=256 src/h3.js",
+    "clinic:hono": "clinic doctor --name hono -- node --max-old-space-size=2048 --max-semi-space-size=256 src/hono.js"
+  },
   "dependencies": {
     "@bogeychan/elysia-logger": "^0.1.8",
     "@effect/platform": "^0.79.1",
@@ -26,6 +34,7 @@
     "typebox-express-middleware": "patch:typebox-express-middleware@npm%3A0.0.2#~/.yarn/patches/typebox-express-middleware-npm-0.0.2-40454d1d8f.patch"
   },
   "devDependencies": {
+    "clinic": "^13.0.0",
     "typescript": "^5.8.2"
   },
   "packageManager": "yarn@4.7.0"

@@ -4,3 +4,5 @@ node_modules/
 !.yarn/patches
 !.yarn/releases
 .pnp.*
+
+.clinic/
