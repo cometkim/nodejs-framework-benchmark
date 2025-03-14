@@ -13,6 +13,7 @@ Frameworks:
 - [Hono](https://hono.dev/) w/ Node.js adapter
 - [Elysia](https://elysiajs.com/) w/ Node.js adapter
 - [h3](https://h3.unjs.io/) w/ Node.js adapter
+- [@effect/platform](https://effect.website/docs/platform/introduction/) w/ Node.js adapter
 
 Middleware & plugin configuration:
 
@@ -20,9 +21,13 @@ Middleware & plugin configuration:
 - Validation for query, request and response body
 - Simulated I/O task ([common/auth.js](src/common/auth.js))
 
-The benchmarks use each framework’s official plugins, but for validation, all tests follow the same [TypeBox](https://github.com/sinclairzx81/typebox) schema ([common/schema.js](src/common/schema.js)).
+The benchmarks use each framework’s official plugins, and reflect the its own conventions or opinions.
+
+For validation, most tests follow the same [TypeBox](https://github.com/sinclairzx81/typebox) schema ([common/schema.js](src/common/schema.js)).
 
 Fastify reiles on its built-in [ajv](https://ajv.js.org/) compiler, while others use TypeBox's compiler.
+
+For Effect Platform, it uses its own built-in validation method. This might produce more overhead than ajv/TypeBox.
 
 ## Impressions
 

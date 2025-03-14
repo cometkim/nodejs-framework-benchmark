@@ -3,6 +3,8 @@
   "type": "module",
   "dependencies": {
     "@bogeychan/elysia-logger": "^0.1.8",
+    "@effect/platform": "^0.79.1",
+    "@effect/platform-node": "^0.75.1",
     "@elysiajs/cookie": "^0.8.0",
     "@elysiajs/cors": "^1.2.0",
     "@elysiajs/node": "^1.2.6",
@@ -14,6 +16,7 @@
     "@sinclair/typebox": "^0.34.30",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "effect": "^3.13.10",
     "elysia": "^1.2.25",
     "express": "^4.21.2",
     "fastify": "^5.2.1",
@@ -21,6 +24,9 @@
     "hono": "^4.7.4",
     "pino-http": "^10.4.0",
     "typebox-express-middleware": "patch:typebox-express-middleware@npm%3A0.0.2#~/.yarn/patches/typebox-express-middleware-npm-0.0.2-40454d1d8f.patch"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
   },
   "packageManager": "yarn@4.7.0"
 }
